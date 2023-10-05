@@ -1,1 +1,5 @@
 // Linked lists
+
+function linkedList(){
+    
+}
