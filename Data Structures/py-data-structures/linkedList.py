@@ -1,4 +1,7 @@
 # Linked lists
 
-def linked_list:
-    
+class linked_list:
+
+
+class Node:
+
