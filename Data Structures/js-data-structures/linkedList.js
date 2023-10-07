@@ -1,5 +1,9 @@
 // Linked lists
 
-function linkedList(){
+class linkedList{
+
+}
+
+class Node{
     
 }
