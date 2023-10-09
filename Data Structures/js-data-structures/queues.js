@@ -6,10 +6,10 @@ class Queue{
     }
 
     enqueue(){
-
+        // add queue
     }
 
     dequeue(){
-
+        // remove 
     }
 }
