@@ -6,10 +6,10 @@ class Stack{
     }
 
     add(){
-
+        // add stack
     }
 
     remove(){
-
+        // remove stack
     }
 }
