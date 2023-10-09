@@ -13,6 +13,14 @@ class linked_list:
 
     def size(self):
          return self.size
+    
+    # head
+
+    # tail
+
+    # get at 
+
+    # pop
 
 
 class Node:
