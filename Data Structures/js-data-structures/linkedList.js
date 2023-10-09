@@ -39,6 +39,8 @@ class linkedList{
             this.prepend(value);
             return;
         }
+
+
     }
 
     size(){
@@ -46,11 +48,14 @@ class linkedList{
     }
 
     // head
+        // get lists head node
 
     // tail
+        // get lists tail node
 
     // get at(index)
-
+        // get list at index
+        
     // pop
 
 
@@ -70,3 +75,4 @@ list.prepend(300);
 list.append(500);
 
 console.log(list);
+
