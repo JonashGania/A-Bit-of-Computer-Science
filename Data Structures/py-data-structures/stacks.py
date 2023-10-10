@@ -2,8 +2,12 @@
 
 class Stack:
     def __init__(self):
-        
-    def add(self):
-        # add stack
+        self.items = []
+
+    def add(self, element):
+        return self.items.append(element)
     def remove(self):
-        # remove stack
+        length = len(self.items)
+
+        if length > 0:
+            return self.items.pop()
