@@ -40,15 +40,30 @@ class linkedList{
             return;
         }
 
+        const node = new Node(value);
+        let current, previous;
+        current = this.head;
+        let count = 0;
 
+        while(count < index){
+            previous = current;
+            count++;
+            current = current.next;
+        }
+
+        node.next = current;
+        previous.next = node;
+
+        this.size++;
     }
 
     size(){
         return this.size;
     }
 
-    // head
-        // get lists head node
+    // head(){
+        
+    // }
 
     // tail
         // get lists tail node
@@ -58,7 +73,14 @@ class linkedList{
         
     // pop
 
+    // print(){
+    //     let current = this.head;
 
+    //     while(current){
+    //         console.log(current.value);
+    //         current = current.next;
+    //     }
+    // }
 }
 
 class Node{
@@ -72,7 +94,8 @@ class Node{
 const list = new linkedList();
 list.prepend(100);
 list.prepend(300);
-list.append(500);
+list.append(400);
+list.insertAt(500, 2);
 
 console.log(list);
 
