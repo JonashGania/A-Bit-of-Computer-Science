@@ -2,10 +2,12 @@
 
 class Queue{
     constructor(){
-
+        this.items = {};
+        this.frontIndex = 0;
+        this.backIndex = 0;
     }
 
-    enqueue(){
+    enqueue(item){
         // add queue
     }
 
