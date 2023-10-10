@@ -2,14 +2,16 @@
 
 class Stack{
     constructor(){
-
+        this.items = [];
     }
 
-    add(){
-        // add stack
+    add(element){
+        return this.items.push(element);
     }
 
     remove(){
-        // remove stack
+        if(this.items.length > 0){
+            return this.items.pop()
+        }
     }
 }
