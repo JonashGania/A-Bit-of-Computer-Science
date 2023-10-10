@@ -5,7 +5,20 @@ class linked_list:
         self.head = None
         self.size = 0
     
-    # def append(value):
+    def append(self, value):
+        node = Node(value)
+
+        if self.head == None:
+            self.head = node
+        else:
+            current = self.head
+
+            while current.next:
+                 current = current.next
+
+            current.next = node
+
+        self.size += 1    
         
     def prepend(self,value):
         self.head = Node(value, self.head)
