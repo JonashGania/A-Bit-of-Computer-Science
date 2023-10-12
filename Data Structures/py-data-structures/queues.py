@@ -10,3 +10,7 @@ class Queue:
         # add new
     def dequeue(self):
         # remove
+
+    def peek():
+
+    def size():
