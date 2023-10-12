@@ -14,4 +14,12 @@ class Queue{
     dequeue(){
         // remove 
     }
+
+    peek(){
+
+    }
+
+    size(){
+        
+    }
 }
