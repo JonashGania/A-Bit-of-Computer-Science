@@ -14,4 +14,12 @@ class Stack{
             return this.items.pop()
         }
     }
+
+    peek(){
+        
+    }
+
+    size(){
+        
+    }
 }
