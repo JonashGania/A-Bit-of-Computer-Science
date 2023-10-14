@@ -45,6 +45,65 @@ class Tree{
     }
 
     removeNode(node, key){
-        
+        if(node === null){
+            return null
+        }
+
+        else if(key < node.data){
+            node.left = this.removeNode(node.left, key);
+            return node;
+        }
+
+        else if (key > node.data){
+            node.right = this.removeNode(node.right, key);
+            return node;
+        }
+
+        else{
+            if(node.right === null && node.left === null){
+                node = null;
+                return node
+
+            }
+            
+            if(node.left === null) {
+                node = node.left;
+                return node;
+            }
+
+            else if (node.right === null){
+                node = node.right;
+                return node;
+            }
+
+            const aux = this.findMinNode(node.right);
+            node.data = aux.data;
+
+            node.right = this.removeNode(node.right, aux.data);
+            return node;
+        }
+    }
+
+    findMinNode(node){
+        if(node.left === null){
+            return node
+        } else
+            return this.findMinNode(node.left)
+    }
+
+    getRootNode(){
+        return this.root
     }
 }
+
+const bst = new Tree();
+
+bst.insert(25);
+bst.insert(14);
+bst.insert(35);
+bst.insert(13);
+bst.insert(33);
+bst.insert(2);
+
+
+console.log(bst.getRootNode());
